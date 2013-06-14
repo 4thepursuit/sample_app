@@ -13,14 +13,19 @@ require 'spec_helper'
 
 describe User do
 
+<<<<<<< HEAD
   before do
     @user = User.new(name: "Example User", email: "user@example.com")
   end
+=======
+  before { @user = User.new(name: "Example User", email: "user@example.com") }
+>>>>>>> f4195f544b352ead8d87f4c6f52aeca258285665
 
   subject { @user }
 
   it { should respond_to(:name) }
   it { should respond_to(:email) }
+<<<<<<< HEAD
 
   it { should be_valid }
 
@@ -70,3 +75,6 @@ describe User do
     it { should_not be_valid }
   end
 end
+=======
+end
+>>>>>>> f4195f544b352ead8d87f4c6f52aeca258285665
